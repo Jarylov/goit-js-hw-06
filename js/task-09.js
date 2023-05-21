@@ -6,8 +6,7 @@ function getRandomHexColor() {
 }
 
 function changeBackgroundColor() {
-  const randomColor = getRandomHexColor(); 
-  document.body.style.backgroundColor = randomColor; 
+  document.body.style.backgroundColor = getRandomHexColor(); 
   colorSpan.textContent = randomColor; 
 }
 
