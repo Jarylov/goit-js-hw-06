@@ -2,8 +2,7 @@ const fontSizeControl = document.getElementById("font-size-control");
 const text = document.getElementById("text"); 
 
 const updateTextSize = () => {
-  const fontSize = fontSizeControl.value + "px";
-  text.style.fontSize = fontSize;
+ text.style.fontSize = fontSizeControl.value + "px";
 };
 
 fontSizeControl.addEventListener("input", updateTextSize);
