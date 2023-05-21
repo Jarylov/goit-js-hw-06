@@ -14,4 +14,3 @@ const checkInputValidity = () => {
 };
 
 validationInput.addEventListener("blur", checkInputValidity);
-
