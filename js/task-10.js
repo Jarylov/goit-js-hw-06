@@ -3,12 +3,10 @@ const createButton = document.querySelector('[data-create]');
 const destroyButton = document.querySelector('[data-destroy]');
 const boxesContainer = document.querySelector('#boxes');
 
-// Функція для генерації випадкового кольору
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0')}`;
 }
 
-// Функція для створення колекції елементів
 function createBoxes(amount) {
   const boxes = [];
 
@@ -24,16 +22,13 @@ function createBoxes(amount) {
   boxesContainer.append(...boxes);
 }
 
-// Функція для очищення колекції елементів
 function destroyBoxes() {
   boxesContainer.innerHTML = '';
 }
 
-// Додаємо слухача події "click" до кнопки "Створити"
 createButton.addEventListener('click', () => {
   const amount = Number(input.value);
   createBoxes(amount);
 });
 
-// Додаємо слухача події "click" до кнопки "Очистити"
 destroyButton.addEventListener('click', destroyBoxes);

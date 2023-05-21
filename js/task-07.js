@@ -6,3 +6,4 @@ const updateTextSize = () => {
 };
 
 fontSizeControl.addEventListener("input", updateTextSize);
+

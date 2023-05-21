@@ -17,5 +17,4 @@ incrementButton.addEventListener("click", () => {
   counterValue += 1; 
   updateCounterUI();
 });
-
 updateCounterUI();
