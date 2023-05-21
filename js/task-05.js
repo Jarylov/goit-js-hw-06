@@ -12,5 +12,3 @@ const updateNameOutput = () => {
 };
 
 nameInput.addEventListener("input", updateNameOutput);
-
-getRandomHexColor
