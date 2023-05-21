@@ -11,4 +11,3 @@ function changeBackgroundColor() {
 }
 
 changeColorButton.addEventListener('click', changeBackgroundColor);
-
