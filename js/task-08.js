@@ -3,13 +3,13 @@ const loginForm = document
   .addEventListener('submit', function (event) {
     event.preventDefault();
 
-    var emailInput = document.querySelector('input[name="email"]');
-    var passwordInput = document.querySelector('input[name="password"]');
+    const emailInput = document.querySelector('input[name="email"]');
+    const passwordInput = document.querySelector('input[name="password"]');
 
     if (emailInput.value === '' || passwordInput.value === '') {
       alert('All fields must be filled in.');
     } else {
-      var formData = {
+      const formData = {
         email: emailInput.value,
         password: passwordInput.value,
       };
